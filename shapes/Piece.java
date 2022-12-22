@@ -1,5 +1,11 @@
 package shapes;
 
+import java.awt.Color;
+
 abstract class Piece {
-    private int color;
+    Color color;
+
+    Color getColor() {
+        return color;
+    }
 }

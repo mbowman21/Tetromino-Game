@@ -1,5 +1,9 @@
 package shapes;
 
-public class JShape extends Piece {
-    
+import java.awt.Color;
+
+public final class JShape extends Piece {
+    JShape() {
+        color = Color.BLUE;
+    }
 }
