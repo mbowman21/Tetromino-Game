@@ -1,5 +1,5 @@
-package Shapes;
+package shapes;
 
-public class LShape {
+public class LShape extends Piece {
     
 }

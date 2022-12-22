@@ -1,5 +1,5 @@
-package Shapes;
+package shapes;
 
-public class ZShape {
+public class ZShape extends Piece {
     
 }

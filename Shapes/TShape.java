@@ -1,4 +1,4 @@
-package Shapes;
-public class TShape {
+package shapes;
+public class TShape extends Piece {
     
 }

@@ -1,5 +1,5 @@
-package Shapes;
+package shapes;
 
-public class SquareShape {
+public class SquareShape extends Piece {
     
 }

@@ -1,5 +1,5 @@
-package Shapes;
+package shapes;
 
-public class JShape {
+public class JShape extends Piece {
     
 }
