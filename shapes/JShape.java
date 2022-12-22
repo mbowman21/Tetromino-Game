@@ -3,7 +3,7 @@ package shapes;
 import java.awt.Color;
 
 public final class JShape extends Piece {
-    JShape() {
+    public JShape() {
         color = Color.BLUE;
     }
 }
