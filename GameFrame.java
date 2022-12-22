@@ -2,9 +2,14 @@ import javax.swing.JFrame;
 
 class GameFrame extends JFrame {
     GameFrame() {
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(500,500);
-        this.setLayout(null);
-        this.setVisible(true);
+        add(new GamePanel());
+        setTitle("Tetromino Game");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+        pack();
+        setSize(500,500);
+        setLayout(null);
+        setVisible(true);
+        setLocationRelativeTo(null);
     }
 }
