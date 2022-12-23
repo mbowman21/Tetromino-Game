@@ -7,7 +7,7 @@ class GameFrame extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.pack();
-        //this.setSize(500, 500); Take this out later
+        // this.setSize(500, 500); Take this out later
         this.setLayout(null);
         this.setVisible(true);
         this.setLocationRelativeTo(null);

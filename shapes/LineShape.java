@@ -6,5 +6,4 @@ public class LineShape extends Piece {
     public LineShape() {
         color = Color.CYAN;
     }
-    
 }
