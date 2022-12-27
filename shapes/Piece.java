@@ -1,11 +1,17 @@
 package shapes;
 
 import java.awt.Color;
+import java.awt.Graphics;
 
 abstract class Piece {
     Color color;
+    int[][] locations;
 
-    Color getColor() {
+    public Color getColor() {
         return color;
+    }
+    
+    public void draw(Graphics g) {
+
     }
 }

@@ -11,12 +11,14 @@ class GamePanel extends JPanel implements ActionListener {
     static final int SCREEN_WIDTH = 300;
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 30;
+    boolean running = false;
 
     GamePanel() {
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
+        this.running = true;
     }
 
     public void paintComponent(Graphics g) {
@@ -33,6 +35,10 @@ class GamePanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (running) {
+
+        }
+        repaint();
     }
 
     public class MyKeyAdapter extends KeyAdapter {
