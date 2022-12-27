@@ -7,11 +7,14 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 
+import shapes.LineShape;
+
 class GamePanel extends JPanel implements ActionListener {
     static final int SCREEN_WIDTH = 300;
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 30;
     boolean running = false;
+    shapes.LineShape piece;
 
     GamePanel() {
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
@@ -19,11 +22,13 @@ class GamePanel extends JPanel implements ActionListener {
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         this.running = true;
+        this.piece = new LineShape();
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         draw(g);
+        this.piece.draw(g, UNIT_SIZE);
     }
 
     public void draw(Graphics g) {

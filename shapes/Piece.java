@@ -5,21 +5,26 @@ import java.awt.Graphics;
 
 abstract class Piece {
     Color color;
-    Coordinate location;
+    Coordinate location = new Coordinate(5, 0);
     Coordinate[] dimensions = new Coordinate[4];
 
     public Color getColor() {
         return this.color;
     }
 
-    public void draw(Graphics g) {
+    public void draw(Graphics g, int unit_size) {
         g.setColor(this.color);
         for (Coordinate coordinate : dimensions) {
-            // MORE STUFF GOES HERE
+            g.drawRect((coordinate.getX() + location.getX()) * unit_size, (coordinate.getY() + location.getY()) * unit_size, unit_size, unit_size);
         }
     }
 
+    public void hardDorp() {
+        //STUFF GOES HERE
+    }
+
     public void moveDown() {
+        //ADD TIMER MOVEDOWN AND THEN SOFT DROP MOVEDOWN
         Coordinate[] tryMove = new Coordinate[dimensions.length];
 
         for (int i = 0; i < dimensions.length; i++) {
