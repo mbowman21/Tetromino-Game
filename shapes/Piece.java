@@ -15,7 +15,7 @@ abstract class Piece {
     public void draw(Graphics g, int unit_size) {
         g.setColor(this.color);
         for (Coordinate coordinate : dimensions) {
-            g.drawRect((coordinate.getX() + location.getX()) * unit_size, (coordinate.getY() + location.getY()) * unit_size, unit_size, unit_size);
+            g.fillRect((coordinate.getX() + location.getX() - 1) * unit_size, (coordinate.getY() + location.getY()) * unit_size, unit_size, unit_size);
         }
     }
 
